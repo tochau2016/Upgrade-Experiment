@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="header">List King</h1>
+        <h2>Buy groceries</h2>
+        <ul id="ul_test">
+            <li id="one" class="hot"><em>fresh</em> figs</li>
+            <li id="two" class="hot">pine nuts</li>
+            <li id="three" class="hot">honey</li>
+            <li id="four" class="cold">balsamic vinegar</li>
+        </ul>
+        <div id="scriptResult"></div>
+    </div>
+    <a href=""></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+
+
+        // var a = document.getElementsByTagName('ul')[0] ;
+        // console.log(a)
+        // var f = a.firstElementChild;
+        // var l = a.lastElementChild;
+        // var d = document.getElementsByTagName('li')[0].firstChild;
+        // console.log(d)
+
+        // var e = document.getElementById('one').firstChild.nextSibling.nodeValue;
+        // console.log(e);
+        // f.setAttribute('class', 'complete');
+        // l.setAttribute('class', 'cool'); 
+
+        // var a = document.getElementById('two').firstChild.nodeValue;
+        // console.log(a);
+        // document.getElementById('two').firstChild.nodeValue = a.replace('pine nuts', 'meo meo')
+        // console.log(document.getElementById('three').textContent)
+
+
+        // var a = document.getElementById('one').innerText;
+        // var b = document.getElementById('one').textContent;
+        // console.log(b)
+        // console.log(a);
+
+        // var c = document.getElementById('one');
+        // var msg = '<p>textContent: ' + c.textContent + '</p>';
+        // msg += '<p>innerText: ' + c.innerText + '</p>'
+        // document.getElementById('scriptResult').innerHTML = msg;
+
+        // // c.textContent = 'gau gau';
+
+        // c.innerHTML = '';
+        // var e = document.getElementById('one').innerHTML;
+
+
+        // document.getElementById('one').innerHTML = '<a href=\'google.com\'>' + e + '</a>';
+
+        // console.log(d);
+        // d.innerHTML = '<h2> Cute </h2> honey'
+
+
+
+        // var a = document.getElementsByTagName('li')[0];
+
+        // var b = a.parentNode;
+        // console.log(b);
+
+        // b.removeChild(a);
+        // console.log(b);
+
+        // document.write('abc')
+
+        // document.getElementById('four').innerHTML = 'abc';
+        // var b = document.createElement('li');
+        // var c = document.createTextNode('abc');
+        // b.appendChild(c);
+        // var a = document.getElementsByTagName('ul')[0]
+        // a.appendChild(b);
+
+        // var d = document.createElement('li');
+        // var e = document.createTextNode('def');
+        // d.appendChild(e);
+
+        // a.appendChild(d);
+
+        // var g = document.getElementsByTagName('ul')[0];
+        // var h = g.parentNode;
+
+        // h.removeChild(g);
+
+        // var adr = 'http://example.com/xss.php?cookie=' + escape(document.cookie);
+        // var gg = escape(document.cookie);
+        // console.log(gg);
+        // console.log(adr)
+
+        // var myCookie = "mycookie=hellocookie";
+        // document.cookie = myCookie;
+
+
+        // console.log(document.getElementById('one').textContent)
+
+        // var u = document.getElementById('one').hasAttribute('class')
+        // var z = document.getElementById('one').getAttribute('class')
+
+        // if (u == true) {
+        //     document.write('The first item has className: ' + z);
+
+        //     document.getElementById('scriptResult').innerHTML = 'The first item has className: ' + z;
+
+        //     var first = document.getElementById('one');
+        //     first.className = 'complete';
+        //     first.className = 'cold'
+
+        //     var fourth = document.getElementsByTagName('li')[3];
+        //     console.log(fourth)
+        //     fourth.setAttribute('class', 'complete')
+        //     console.log(fourth)
+        
+
+        // }
+        
+        var first = document.getElementById('one')
+        if (first.hasAttribute('class')) {
+                first.removeAttribute('class');
+        }
+    </script>
+</body>
+
+</html>

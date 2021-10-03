@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="page">
+        <h1 class="header">LIST</h1>
+        <h2>BUY GROCERIES</h2>
+        <!-- <h2>BUY GROCERIES</h2> -->
+        <ul>
+            <li id="one"><em>fresh</em> figs</li>
+            <li id="two">pine nuts</li>
+            <li id="three">honey</li>
+            <li id="four">balsamic vinegar</li>
+        </ul>
+    </div>
+
+    <script>
+        var a = document.querySelectorAll('li').length;
+        console.log(a);
+        // document.querySelector('span').innerHTML = a;
+
+        var list = document.getElementsByTagName('ul')[0];
+
+        var last = document.createElement('li');
+        var lastText = document.createTextNode('cream');
+        last.appendChild(lastText);
+
+        list.appendChild(last);
+        console.log(list);
+
+        var first = document.createElement('li');
+        var firstText = document.createTextNode('kale');
+        first.appendChild(firstText);
+        list.insertBefore(first, list.firstChild)
+
+        listItem = document.querySelectorAll('li');
+        for (var i = 0; i < listItem.length; i++) {
+            listItem[i].className = 'cool'
+        }
+
+        var header = document.querySelector('h2');
+        console.log(header)
+        // console.log(header.innerHTML)
+        console.log(header.firstChild.nodeValue);
+
+        var newHeader = header.firstChild.nodeValue + '<span>' + a + '</span>'
+        header.innerHTML = newHeader;
+    </script>
+
+
+</body>
+
+</html>
