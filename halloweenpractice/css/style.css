@@ -1,6 +1,6 @@
 /* ============ FONTS =========== */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /* ============ VARIABLE CSS ============ */
 
@@ -238,6 +238,13 @@ button {
 }
 
 
+/* Change background header */
+
+.scroll-header {
+    background: var(--container-color);
+}
+
+
 /* =============== HOME ============ */
 
 .home__content {
@@ -374,4 +381,140 @@ button {
     display: inline-flex;
     align-items: center;
     column-gap: .5rem;
+}
+
+
+/* =============== CATEGORY =============== */
+
+.category__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+}
+
+.category__data {
+    text-align: center;
+}
+
+.category__img {
+    width: 120px;
+    margin-bottom: var(--mb-0-75);
+    transition: .3s;
+}
+
+.category__title {
+    margin-bottom: var(--mb-0-25);
+}
+
+.category__data:hover .category__img {
+    transform: translateY(-.5rem);
+}
+
+
+/* ============== ABOUT =============  */
+
+.about__container {
+    row-gap: 2rem;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__description {
+    margin-bottom: var(--mb-2);
+}
+
+.about__img {
+    width: 200px;
+    justify-self: center;
+}
+
+
+/* =========== TRICK OR TREAT =========== */
+
+.trick__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.trick__content {
+    position: relative;
+    background: var(--container-color);
+    border-radius: 1rem;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.trick__img {
+    width: 90px;
+    transition: .3s;
+}
+
+.trick__img:first-child {
+    height: 90px;
+}
+
+.trick__subtitle,
+.trick__price {
+    display: block;
+}
+
+.trick__subtitle {
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.trick__title,
+.trick__price {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+}
+
+.trick__button {
+    display: inline-flex;
+    padding: .5rem;
+    border-radius: .25rem .25rem .75rem .25rem;
+    position: absolute;
+    right: -3rem;
+    bottom: 0;
+}
+
+.trick__icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.trick__content:hover .trick__img {
+    transform: translateY(-.5rem);
+}
+
+.trick__content:hover .trick__button {
+    right: 0;
+}
+
+
+/* ============ DISCOUNT =============== */
+
+.discount__container {
+    background: var(--container-color);
+    border-radius: 1rem;
+    padding: 2.5rem 0 1.5rem;
+    row-gap: .75rem;
+}
+
+.discount__data {
+    text-align: center;
+}
+
+.discount__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+}
+
+.discount__img {
+    width: 200px;
+    justify-self: center;
 }
