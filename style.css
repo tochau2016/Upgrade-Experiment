@@ -1,3 +1,27 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: auto 0 auto 0;
+    max-width: 500px;
+}
+
+.img__container {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 600px;
+}
+
+.img__banner {
+    height: 100%;
+    width: 100%;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
@@ -114,62 +138,6 @@ h5 {
     word-break: break-all;
     padding-left: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* .container {
     margin: 20px auto;
