@@ -1,46 +1,117 @@
 /** @format */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.slider {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
+.container {
+  width: 600px;
+  height: 600px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-.slider_items {
-  width: calc(100% * 0.33333);
-  height: 400px;
-}
-
-.slider_items img {
-  object-fit: cover;
+.container img {
   width: 100%;
   height: 100%;
-}
+} */
 
-.slider_items:nth-child(1) {
-  position: absolute;
-  left: -15%;
-  display: flex;
-  align-items: flex-end;
-}
-
-.slider_items:nth-child(1) img {
+.outCircle {
+  width: 200px;
   height: 200px;
-}
-
-.slider_items:nth-child(3) {
+  background-color: lightblue;
+  left: 270px;
   position: absolute;
-  right: -15%;
-  display: flex;
-  align-items: flex-end;
+  top: 50px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+.rotate {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* add this */
+}
+.counterrotate {
+  width: 100px;
+  height: 100px;
 }
 
-.slider_items:nth-child(3) img {
-  height: 200px;
+.inner {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  background: red;
+  border-radius: 100px;
+  background-color: red;
+  display: table-cell;
+}
+.anim1 {
+  -webkit-animation: circle1 10s infinite linear;
+}
+.anim1 .counterrotate {
+  -webkit-animation: ccircle1 10s infinite linear;
+}
+.anim2 {
+  -webkit-animation: circle2 10s infinite linear;
+}
+.anim2 .counterrotate {
+  -webkit-animation: ccircle2 10s infinite linear;
+}
+.anim3 {
+  -webkit-animation: circle3 10s infinite linear;
+}
+.anim3 .counterrotate {
+  -webkit-animation: ccircle3 10s infinite linear;
+}
+@-webkit-keyframes circle1 {
+  from {
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes ccircle1 {
+  from {
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+@-webkit-keyframes circle2 {
+  from {
+    -webkit-transform: rotateZ(90deg);
+  }
+  to {
+    -webkit-transform: rotateZ(450deg);
+  }
+}
+@-webkit-keyframes ccircle2 {
+  from {
+    -webkit-transform: rotateZ(-90deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-450deg);
+  }
+}
+@-webkit-keyframes circle3 {
+  from {
+    -webkit-transform: rotateZ(180deg);
+  }
+  to {
+    -webkit-transform: rotateZ(540deg);
+  }
+}
+@-webkit-keyframes ccircle3 {
+  from {
+    -webkit-transform: rotateZ(-180deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-540deg);
+  }
 }
