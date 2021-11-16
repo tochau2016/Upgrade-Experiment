@@ -361,6 +361,7 @@ body.dark-theme {
 
 .home__social-link:hover {
   transform: translateX(0.25rem);
+  color: #fff;
 }
 
 /* ================ BUTTONS ============== */
