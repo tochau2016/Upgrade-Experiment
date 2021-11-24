@@ -1,0 +1,254 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body id="body">
+    <form action="http://fb.com" method="post">
+      <label for="username">Create a username: </label>
+      <input type="text" name="" id="username" />
+      <div id="feedback"></div>
+
+      <label for="password">Create a password: </label>
+      <input type="password" name="" id="password" />
+
+      <input type="submit" value="Sign up!" />
+    </form>
+
+    <!-- <div class="stats">
+      <div class="div1">
+        Screen: <input type="text" id="sx" />
+        <span id="sy"></span>
+      </div>
+
+      <div class="div2">
+        <span id="px"></span>
+        <span id="py"></span>
+      </div>
+
+      <div class="div3">
+        <span id="cx"></span>
+        <span id="cy"></span>
+      </div>
+    </div> -->
+
+    <!-- <ul id="shoppingList">
+      <id class="complete">
+        <a href="itemDone.php?id=1"><em>fresh</em>figs</a>
+      </id>
+      <id class="complete">
+        <a href="itemDone.php?id=2">pine nuts</a>
+      </id>
+      <id class="complete">
+        <a href="itemDone.php?id=3">honey</a>
+      </id>
+      <id class="complete">
+        <a href="itemDone.php?id=4">balsamic vinegar</a>
+      </id>
+    </ul> -->
+
+    <script>
+      // ============ POSITION ==========
+      // var sx = document.getElementById("sx");
+      // var sy = document.getElementById("sy");
+      // var px = document.getElementById("px");
+      // var py = document.getElementById("py");
+      // var cx = document.getElementById("cx");
+      // var cy = document.getElementById("cy");
+
+      // function showPosition(event) {
+      //   sx.value = event.screenX;
+      //   sy.value = event.screenY;
+      //   px.value = event.pageX;
+      //   py.value = event.pageY;
+      //   cx.value = event.clientX;
+      //   cy.value = event.clientY;
+      //   console.log(sx.value);
+      // }
+
+      // var el = document.getElementById("body");
+      // el.addEventListener("mousemove", showPosition, false);
+
+      // =========== ON CLICK ===========
+      //   var msg = '<div class="header"><a id="close" href="#">close X</a></div>';
+      //   msg += "<div><h2>System Maintain</h2>";
+      //   msg += "our servers are being updated between 3 and 4 a.m";
+      //   msg +=
+      //     "During this time, there may be minor disruptions to service.</div>";
+
+      //   var elNote = document.createElement("div");
+      //   elNote.setAttribute("id", "note");
+      //   elNote.innerHTML = msg;
+      //   document.body.appendChild(elNote);
+
+      //   function dismissNote() {
+      //     document.body.removeChild(elNote);
+      //   }
+
+      //   var elClose = document.getElementById("close");
+      //   elClose.addEventListener("click", dismissNote, true);
+
+      // function checkUsername () {
+      //     var username = el.value;
+      //     if (username.length < 5) {
+      //         elMsg.className = 'warning';
+      //         elMsg.textContent = 'Not long enough, yet...';
+      //     } else {
+      //         elMsg.textContent = '';
+      //     }
+      // }
+
+      // var el = document.getElementById("username");
+      var elMsg = document.getElementById("feedback");
+
+      function tipUsername() {
+        elMsg.className = "tip";
+        elMsg.innerHTML = "Username must be at least 5 characters";
+      }
+
+      function checkUsername() {
+        if (this.value.length < 5) {
+          elMsg.textContent = "Not long enough";
+        } else {
+          elMsg.textContent = "";
+        }
+      }
+
+      document
+        .getElementById("username")
+        .addEventListener("focus", tipUsername, false);
+      // el.addEventListener("blur", checkUsername, false);
+
+      document
+        .getElementById("username")
+        .addEventListener("blur", checkUsername, false);
+
+      // function setup () {
+      //     var textInput = document.getElementById('username');
+      //     textInput.focus();
+      // }
+
+      // window.addEventListener('load', setup, false);
+
+      // function checkUsername() {
+      //     var elMsg = document.getElementById('feedback');
+      //     if (elUsername.value.length < 5) {
+      //         elMsg.textContent = 'Username must be 5 character or more';
+      //     } else {
+      //         elMsg.textContent = '';
+      //     }
+      // }
+
+      // var a = document.getElementById('username');
+      // a.onblur = checkUsername;
+
+      // var elUsername = document.getElementById('username');
+      // elUsername.addEventListener('blur', checkUsername, false);
+
+      // var elUsername = document.getElementById('username');
+      // var elMsg = document.getElementById('feedback');
+
+      // function checkUsername (minLength) {
+      //     if (elUsername.value.length < minLength) {
+      //         elMsg.innerHTML = 'Username must be over or equal to ' + minLength;
+      //     } else {
+      //         elMsg.innerHTML = '';
+      //     }
+      //     console.log(elUsername.value.length)
+      // }
+      // elUsername.addEventListener('blur', function() {checkUsername(5);}, false)
+
+      // function checkUsername (e, minLength) {
+      //     var target = e.target;
+      //     console.log(e);
+
+      //     if (target.value.length < minLength) {
+      //         elMsg.textContent = 'Username must be equal to 5 or over'
+      //     } else {
+      //         elMsg.textContent = ''
+      //     }
+      // }
+
+      // document.getElementById('username').addEventListener('blur', function(e) {
+      //     checkUsername(e, 5)
+      // }, false)
+
+      // function checkLength(e, minLength) {
+      //     var el, elMsg;
+      //     if (!e) {
+      //         e = window.event;
+      //     }
+      //     el = e.target || e.srcElement;
+      //     elMsg = el.nextElementSibling;
+      //     console.log(el.value)
+
+      //     if (el.value.length < minLength) {
+      //         elMsg.innerHTML = 'Username must be ' + minLength + ' character or more';
+      //     } else {
+      //         elMsg.innerHTML = '';
+      //     }
+      // }
+
+      // var elUsername = document.getElementById('username');
+      // if (elUsername.addEventListener) {
+      //     elUsername.addEventListener('blur', function (e) {
+      //         checkLength(e, 5);
+      //     }, false);
+      // } else {
+      //     elUsername.attachEvent('onblur', function (e) {
+      //         checkLength(e, 5)
+      //     })
+      // }
+
+      // function getTarget(e) {
+      //     if (!e) {
+      //         e = window.event;
+      //     }
+      //     return e.target || e.srcElement;
+      // }
+
+      // function itemDone(e) {
+      //     var target = getTarget(e);
+      // var elParent = target.parentNode;
+      // var elGrandparent = target.parentNode.parentNode;
+      // elGrandparent.removeChild(elParent);
+
+      //     if (target.nodeName.toLowerCase() == 'a' ) {
+      //         elListItem = target.parentNode;
+      //         elList = target.parentNode.parentNode;
+      //         elList.removeChild(elListItem);
+      //     }
+
+      //     if (target.nodeName.toLowerCase() == 'em') {
+      //         elListItem = target.parentNode;
+      //         elList = target.parentNode.parentNode;
+      //         elList.removeChild(elListItem);
+      //     }
+      //     console.log(target.nodeName)
+
+      //     if (e.preventDefault) {
+      //         e.preventDefault();
+      //     } else {
+      //         e.returnValue = false;
+      //     }
+      // }
+
+      // var elUl = document.getElementById('shoppingList');
+      // if (elUl.addEventListener) {
+      //     elUl.addEventListener('click', function (e) {
+      //         itemDone(e);
+      //     }, false)
+      // } else {
+      //     elUl.attachEvent('onclick', function (e) {
+      //         itemDone(e);
+      //     });
+      // }
+    </script>
+  </body>
+</html>
