@@ -82,3 +82,69 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+// =========== SHOW SCROLL UP ============
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  if (this.scrollY >= 200) {
+    scrollUp.classList.add("show-scroll");
+  } else {
+    scrollUp.classList.remove("show-scroll");
+  }
+}
+window.addEventListener("scroll", scrollUp);
+
+// =========== DARK LIGHT THEME ============
+const themeButton = document.getElementById("theme-button"),
+  darkTheme = "dark-theme",
+  iconTheme = "bx-sun";
+
+// Kiểm tra trong local có dữ liệu hay chưa
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("select-icon");
+
+// Kiểm tra đang tồn tại class dark hay lightm và icon
+const getCurrentTheme = () => {
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+};
+const getCurrentIcon = () => {
+  themeButton.classList.contains(iconTheme) ? "bx-moon" : "bx-sun";
+};
+
+// Kiểm tra chủ đề người dùng chọn trước đó
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "bx-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+// ============== SHOW CART =============
+const cart = document.getElementById("cart"),
+  cartShop = document.getElementById("cart-shop"),
+  cartClose = document.getElementById("cart-close");
+
+//  ============== CART SHOW =============
+if (cartShop) {
+  cartShop.addEventListener("click", () => {
+    cart.classList.add("show-cart");
+    console.log("a");
+  });
+}
+
+// ============ MENU HIDDEN =============
+if (cartClose) {
+  cartClose.addEventListener("click", () => {
+    cart.classList.remove("show-cart");
+  });
+}
