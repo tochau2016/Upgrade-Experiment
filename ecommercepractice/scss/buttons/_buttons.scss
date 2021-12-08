@@ -1,0 +1,41 @@
+// ============== Button Dark/Light ===============
+.change-theme {
+  color: $title-color;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.nav__btns {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: $button-color;
+  color: #fff;
+  padding: 1.25rem 2rem;
+  font-weight: $font-medium;
+  transition: 0.3s;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background-color: $button-color-alt;
+    cursor: pointer;
+  }
+
+  &--gray {
+    background-color: hsl(0, 0%, 75%);
+    color: $title-color;
+    &:hover {
+      background-color: hsl(0, 0%, 60%);
+      color: $title-color;
+    }
+  }
+
+  &--small {
+    padding: 1rem 1.5rem;
+  }
+}

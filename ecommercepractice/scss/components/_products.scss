@@ -1,0 +1,53 @@
+.products {
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  &__card {
+    position: relative;
+    background-color: $container-color;
+    padding: 1.25rem 0;
+    border: 1px solid $border-color;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0 8px 32px hsla(0, 0%, 10%, 0.1);
+    }
+  }
+
+  &__img {
+    height: 125px;
+    margin-bottom: $mb-1;
+  }
+
+  &__title,
+  &__price {
+    font-size: $small-font-size;
+    font-weight: $font-medium;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: $mb-0-5;
+  }
+
+  &__price {
+    color: $first-color;
+  }
+
+  &__button {
+    background-color: $button-color;
+    padding: 0.2rem 0.4rem;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    &:hover {
+      background-color: $button-color-alt;
+    }
+  }
+}
