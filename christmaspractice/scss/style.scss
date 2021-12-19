@@ -1,5 +1,11 @@
 @import "./config/breakpoints";
+@import "./tools/mixins";
 @import "./config/variables";
 @import "./base/base";
 @import "./layout/layout";
+@import "./buttons/buttons";
 @import "./components/header";
+@import "./components/home";
+@import "./components/giving";
+@import "./components/celebrate";
+@import "./components/gifts";

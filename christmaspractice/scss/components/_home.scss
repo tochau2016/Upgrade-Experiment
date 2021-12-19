@@ -1,0 +1,27 @@
+.home {
+  &__container {
+    padding-top: 1.5rem;
+    row-gap: 1.5rem;
+  }
+
+  &__img {
+    width: 320px;
+    justify-self: center;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: $biggest-font-size;
+    line-height: 140%;
+    margin-bottom: $mb-0-5;
+  }
+
+  &__description {
+    font-size: $small-font-size;
+    padding: 0 2rem;
+    margin-bottom: $mb-2-5;
+  }
+}
