@@ -1,6 +1,7 @@
 @import "./config/breakpoints";
-@import "./tools/mixins";
 @import "./config/variables";
+@import "./tools/mixins";
+@import "./tools/swiper";
 @import "./base/base";
 @import "./layout/layout";
 @import "./buttons/buttons";
@@ -9,3 +10,6 @@
 @import "./components/giving";
 @import "./components/celebrate";
 @import "./components/gifts";
+@import "./components/new";
+@import "./components/message";
+@import "./components/footer";

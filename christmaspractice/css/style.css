@@ -3,6 +3,14 @@
   --mobile: 43rem;
 }
 
+.swiper-pagination-bullet {
+  background-color: #5d5656;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #dc3845;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -341,5 +349,109 @@ button {
 .gift__title {
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+.new__card {
+  position: relative;
+  width: 230px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 16px rgba(48, 29, 30, 0.1);
+          box-shadow: 0 4px 16px rgba(48, 29, 30, 0.1);
+  padding: 1rem 1rem 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.new__card:hover .new__img {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+.new__overlay {
+  width: 250px;
+  height: 250px;
+  background-color: #dc3845;
+  border-radius: 50%;
+  position: absolute;
+  top: -5rem;
+  left: -0.65rem;
+  z-index: 0;
+}
+
+.new__img {
+  position: relative;
+  width: 150px;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.new__price {
+  font-size: 1.25rem;
+}
+
+.new__title {
+  font-weight: 500;
+}
+
+.new__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.new__icon {
+  font-size: 1.25rem;
+}
+
+.message__container {
+  row-gap: 3rem;
+  background-color: #dc3845;
+  padding: 2.5rem 1.5rem 2.5rem;
+  border-radius: 1.25rem;
+}
+
+.message__form {
+  text-align: center;
+}
+
+.message__title {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.message__input {
+  width: 100%;
+  background-color: #fff;
+  color: #5d5656;
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.message__button {
+  background-color: #282525;
+  width: 100%;
+}
+
+.message__button:hover {
+  background-color: #282525;
+}
+
+.message__img {
+  width: 200px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 /*# sourceMappingURL=style.css.map */
