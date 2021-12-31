@@ -38,6 +38,7 @@ function scrollHeader() {
   } else {
     header.classList.remove("scroll-header");
   }
+  console.log(this);
 }
 window.addEventListener("scroll", scrollHeader);
 

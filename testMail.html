@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <input type="button" value="Send Email" onclick="sendEmail()" />
+    </form>
+
+    <script src="./smtp.js"></script>
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          SecureToken: "dd972978-770e-4428-bc97-028431862f3c",
+          To: "truyenthuyet11@gmail.com",
+          From: "promise0258963@gmail.com",
+          Subject: "Test Mail",
+          Body: "Hello, Day la Chau",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
+</html>
