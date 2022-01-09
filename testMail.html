@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form action="" method="post">
-      <input type="button" value="Send Email" onclick="sendEmail()" />
-    </form>
+    <img
+      class="image"
+      src="http://i.stack.imgur.com/pC1Tv.jpg"
+      alt=""
+      width="120"
+      height="120"
+    />
 
     <script src="./smtp.js"></script>
     <script type="text/javascript">
       function sendEmail() {
         Email.send({
-          SecureToken: "dd972978-770e-4428-bc97-028431862f3c",
-          To: "truyenthuyet11@gmail.com",
-          From: "promise0258963@gmail.com",
-          Subject: "Test Mail",
-          Body: "Hello, Day la Chau",
+          SecureToken: 'dd972978-770e-4428-bc97-028431862f3c',
+          To: 'truyenthuyet11@gmail.com',
+          From: 'promise0258963@gmail.com',
+          Subject: 'Test Mail',
+          Body: 'Hello, Day la Chau',
         }).then((message) => alert(message));
       }
     </script>
