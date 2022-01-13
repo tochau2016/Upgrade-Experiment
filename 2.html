@@ -1,0 +1,41 @@
+<body>
+  <nav class="nav">
+    <button type="button" class="nav-close" onclick="toggleNav()">
+      <ion-icon name="close-outline" size="large"></ion-icon>
+    </button>
+    <div class="nav-links-container">
+      <a href="#" class="nav__link">
+        <span class="nav__text">Products</span>
+        <ion-icon name="cube-outline" size="large"></ion-icon>
+      </a>
+      <a href="#" class="nav__link">
+        <span class="nav__text">Locations</span>
+        <ion-icon name="location-outline" size="large"></ion-icon>
+      </a>
+      <a href="#" class="nav__link">
+        <span class="nav__text">Settings</span>
+        <ion-icon name="settings-outline" size="large"></ion-icon>
+      </a>
+      <a href="#" class="nav__link">
+        <span class="nav__text">Contact Us</span>
+        <ion-icon name="call-outline" size="large"></ion-icon>
+      </a>
+    </div>
+  </nav>
+  <main class="main">
+    <button onclick="toggleNav()">Open Navigation</button>
+  </main>
+  <script>
+    function toggleNav() {
+      document.body.classList.toggle('nav-open');
+    }
+  </script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</body>

@@ -1,0 +1,7 @@
+.button {
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-radius: 12px;
+  height: 48px;
+  color: white;
+  background: #0d3499;
+}
