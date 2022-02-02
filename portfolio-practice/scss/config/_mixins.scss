@@ -1,0 +1,28 @@
+// No media query necessary for xs breakpoint as it's effectively `@media (max-width: 0) { ... }`
+@mixin media-breakpoint-down($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: ($width-sm - 0.02px)) {
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media (max-width: ($width-md - 0.02px)) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media (max-width: ($width-lg - 0.02px)) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media (max-width: ($width-xl - 0.02px)) {
+      @content;
+    }
+  }
+  @if $breakpoint == xxl {
+    @media (max-width: ($width-xxl - 0.02px)) {
+      @content;
+    }
+  }
+}

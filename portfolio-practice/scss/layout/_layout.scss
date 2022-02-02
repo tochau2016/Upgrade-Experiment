@@ -1,0 +1,36 @@
+// ========== REUSABLE CSS CLASSES ============
+.container {
+  max-width: $width-lg;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.section__title {
+  font-size: $h2-font-size;
+  color: $first-color;
+  margin-bottom: 2rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: $smaller-font-size;
+  color: $text-color-light;
+}
