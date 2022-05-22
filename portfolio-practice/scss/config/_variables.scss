@@ -64,7 +64,7 @@ $width-xl: 1400px; // extra large, laptops / desktops
 $width-xxl: 1440px; // extra large
 
 /* Responsive typography */
-@include media-breakpoint-down(lg) {
+@mixin media-breakpoint-down($lg) {
   $biggest-font-size: 2.5rem;
   $h1-font-size: 2.25rem;
   $h2-font-size: 1.5rem;
