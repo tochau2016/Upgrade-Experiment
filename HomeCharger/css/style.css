@@ -20,8 +20,24 @@
   margin: 56px 50px 0 52px;
 }
 
+@media (max-width: 767px) {
+  .homecharger-success-payment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 32px 16px;
+  }
+}
+
 .homecharger-success-payment .left-content {
   width: 42%;
+}
+
+@media (max-width: 767px) {
+  .homecharger-success-payment .left-content {
+    width: 100%;
+  }
 }
 
 .homecharger-success-payment .left-content h2 {
@@ -33,9 +49,23 @@
   margin-bottom: 24px;
 }
 
+@media (max-width: 767px) {
+  .homecharger-success-payment .left-content h2 {
+    font-size: 28px;
+    line-height: 35.14px;
+  }
+}
+
 .homecharger-success-payment .left-content p {
   margin-bottom: 30px;
   font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .homecharger-success-payment .left-content p {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .homecharger-success-payment .left-content p span {
@@ -44,6 +74,12 @@
 
 .homecharger-success-payment .right-content {
   width: 49%;
+}
+
+@media (max-width: 767px) {
+  .homecharger-success-payment .right-content {
+    width: 100%;
+  }
 }
 
 .homecharger-success-payment .right-content img {
@@ -56,6 +92,13 @@
   display: flex;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+}
+
+@media (max-width: 767px) {
+  .homecharger-success-payment .buttons {
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
 }
 
 .homecharger-success-payment .buttons button {

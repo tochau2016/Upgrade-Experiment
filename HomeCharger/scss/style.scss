@@ -12,8 +12,15 @@
   align-items: center;
   justify-content: space-between;
   margin: 56px 50px 0 52px;
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin: 32px 16px;
+  }
   .left-content {
     width: 42%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
     h2 {
       color: #009522;
       font-weight: 300;
@@ -21,10 +28,18 @@
       line-height: 60.24px;
       letter-spacing: -0.96px;
       margin-bottom: 24px;
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 35.14px;
+      }
     }
     p {
       margin-bottom: 30px;
       font-weight: 400;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 150%;
+      }
       span {
         font-weight: 700;
       }
@@ -32,6 +47,9 @@
   }
   .right-content {
     width: 49%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
     img {
       width: 100%;
     }
@@ -40,6 +58,9 @@
   .buttons {
     display: flex;
     column-gap: 30px;
+    @media (max-width: 767px) {
+      column-gap: 20px;
+    }
     button {
       border: none;
       outline: none;
