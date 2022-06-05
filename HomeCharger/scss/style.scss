@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homecharger-success-payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 56px 50px 0 52px;
+  .left-content {
+    width: 42%;
+    h2 {
+      color: #009522;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 60.24px;
+      letter-spacing: -0.96px;
+      margin-bottom: 24px;
+    }
+    p {
+      margin-bottom: 30px;
+      font-weight: 400;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .right-content {
+    width: 49%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    column-gap: 30px;
+    button {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 12.5px 0;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background-color: #1464F4;
+      border: 1px solid #1464F4;
+      border-radius: 3px;
+      color: #FFFFFF;
+      cursor: pointer;
+      &:hover {
+        opacity: .9;
+      }
+    }
+    .to-home {
+      background-color: #FFFFFF;
+      color: #1464F4;
+    }
+  }
+}

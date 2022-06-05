@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+* {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.homecharger-success-payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 56px 50px 0 52px;
+}
+
+.homecharger-success-payment .left-content {
+  width: 42%;
+}
+
+.homecharger-success-payment .left-content h2 {
+  color: #009522;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60.24px;
+  letter-spacing: -0.96px;
+  margin-bottom: 24px;
+}
+
+.homecharger-success-payment .left-content p {
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.homecharger-success-payment .left-content p span {
+  font-weight: 700;
+}
+
+.homecharger-success-payment .right-content {
+  width: 49%;
+}
+
+.homecharger-success-payment .right-content img {
+  width: 100%;
+}
+
+.homecharger-success-payment .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.homecharger-success-payment .buttons button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 12.5px 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: #1464F4;
+  border: 1px solid #1464F4;
+  border-radius: 3px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.homecharger-success-payment .buttons button:hover {
+  opacity: .9;
+}
+
+.homecharger-success-payment .buttons .to-home {
+  background-color: #FFFFFF;
+  color: #1464F4;
+}
+/*# sourceMappingURL=style.css.map */
