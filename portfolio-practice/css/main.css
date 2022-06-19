@@ -9,8 +9,7 @@
 /* ========== z-index ========== */
 /* Responsive typography */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -28,14 +27,14 @@ textarea {
 }
 
 body {
-  background-color: #0b111e;
-  color: #babec4;
+  background-color: hsl(219deg, 48%, 8%);
+  color: hsl(219deg, 8%, 75%);
 }
 
 h1,
 h2,
 h3 {
-  color: #f0f2f4;
+  color: hsl(219deg, 15%, 95%);
   font-weight: 600;
 }
 
@@ -56,5 +55,4 @@ button {
 img {
   max-width: 100%;
   height: auto;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
